@@ -1,0 +1,9 @@
+google-genai
+python-dotenv
+requests
+beautifulsoup4
+ddgs
+pypdf
+chromadb
+sentence-transformers
+streamlit
