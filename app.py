@@ -35,7 +35,20 @@ if user_input:
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
 
-            decision = route_request(user_input)
+            try:
+                decision = route_request(user_input)
+            except Exception as e:
+                error_text = str(e)
+
+                if "429" in error_text or "RESOURCE_EXHAUSTED" in error_text:
+                    answer = "⚠️ Gemini API quota has been reached. Please try again later."
+                elif "503" in error_text or "UNAVAILABLE" in error_text:
+                    answer = "⚠️ Gemini is temporarily unavailable. Please try again later."
+                else:
+                    answer = f"⚠️ Something went wrong: {error_text}"
+
+                st.error(answer)
+                st.stop()
 
             st.caption(f"🚦 Route: {decision.route}")
 
