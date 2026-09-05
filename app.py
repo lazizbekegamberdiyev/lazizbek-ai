@@ -18,7 +18,19 @@ if "messages" not in st.session_state:
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         if message.get("route"):
-            st.caption(f"🚦 Route: {message['route']}")
+            route_icons = {
+                "chat": "💬",
+                "web": "🌐",
+                "rag": "📚",
+                "tool": "🔧",
+                "agent": "🤖",
+                "error": "⚠️"
+            }
+
+            route = message["route"]
+            icon = route_icons.get(route, "🚦")
+
+            st.caption(f"{icon} {route.upper()}")
         st.write(message["content"])
 
 user_input = st.chat_input("Ask Lazizbek AI anything...")
