@@ -5,19 +5,19 @@
 
 Lazizbek AI is a modular personal AI copilot designed to support learning, programming, document analysis, research, and productivity.
 
-The project goes beyond a traditional chatbot by combining **memory, RAG, web search, tool calling, AI agents, and intelligent request routing** into one system.
+The project goes beyond a traditional chatbot by combining memory, RAG, web search, tool calling, AI agents, and intelligent request routing into one system.
 
    🚀 Features
 
-- 🧠  Conversation & Long-Term Memory — local SQLite storage
-- 📚  Document RAG — semantic search across uploaded documents
-- 🌐  Web Search — external and current information retrieval
-- 🔧  Tool Calling** — calculator, Python execution, and file reading
-- 🤖  AI Agent** — multi-step task execution
-- 🚦  Intelligent Router** — selects the appropriate processing route
-- 🖥️  Streamlit UI** — interactive chat interface
+- 🧠 Conversation & Long-Term Memory — local SQLite storage
+- 📚 Document RAG — semantic search across uploaded documents
+- 🌐 Web Search — external and current information retrieval
+- 🔧 Tool Calling — calculator, Python execution, and file reading
+- 🤖 AI Agent — multi-step task execution
+- 🚦 Intelligent Router — selects the appropriate processing route
+- 🖥️ Streamlit UI — interactive chat interface
 
-  🏗️ Architecture
+   🏗️ Architecture
 
 ```text
 User
@@ -48,14 +48,14 @@ Intelligent Router
               └──────────────┘
 ````
 
-  🛠️ Tech Stack
+   🛠️ Tech Stack
 
-"Programming"
+   Programming
 
 * Python
 * SQL
 
-"AI & Data"
+    AI & Data
 
 * Google Gemini API
 * RAG
@@ -63,7 +63,7 @@ Intelligent Router
 * ChromaDB
 * SQLite
 
-"Tools & Interface"
+    Tools & Interface
 
 * Streamlit
 * DDGS
@@ -133,7 +133,7 @@ For complex tasks, the agent can:
 5. Continue with another action when necessary
 6. Produce a final answer
 
-The current agent supports up to **5 execution steps**.
+The current agent supports up to 5 execution steps.
 
    🔐 Data & Security
 
@@ -211,17 +211,10 @@ It is a hands-on project for understanding how modern AI systems are built, incl
 * [x] Streamlit UI
 * [ ] Deployment
 
-   👨‍💻 About
+  👨‍💻 About
 
-Built by **Lazizbek Egamberdiyev**, an Economics & Data Science student at Westminster International University in Tashkent (WIUT).
+Built by Lazizbek Egamberdiyev, an Economics & Data Science student at Westminster International University in Tashkent (WIUT).
 
-The project is part of my journey toward building practical skills in **Python, Data Science, AI, and modern AI agent systems**.
+The project is part of my journey toward building practical skills in Python, Data Science, AI, and modern AI agent systems.
 
 ---
-
-⭐ Feel free to explore the code and follow the development.
-
-```
-
-**Hozir faqat paste qil. Commitni hali bosma.**
-```
